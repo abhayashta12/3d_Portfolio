@@ -19,7 +19,7 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    netflix,
     jobit,
     tripguide,
     threejs,
@@ -198,16 +198,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Netflix Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to watch movie trailers and explore through diffrent genres to select the movie of their choice to watch on the weekend, providing a convenient and efficient solution for entertainment needs.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "RestAPI",
           color: "green-text-gradient",
         },
         {
@@ -215,8 +215,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: netflix,
+      source_code_link: "https://github.com/abhayashta12/netflix-clone",
     },
     {
       name: "Job IT",
@@ -228,7 +228,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "RestAPI",
           color: "green-text-gradient",
         },
         {
