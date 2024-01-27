@@ -16,7 +16,7 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
+    orbit5,
     tesla,
     shopify,
     netflix,
@@ -116,16 +116,29 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Access Control Officer",
+      company_name: "Meta",
+      icon: meta,
+      iconBg: "#E6DEDD",
+      date: "December 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Social Media Manager",
+      company_name: "Orbit 5",
+      icon: orbit5,
+      iconBg: "#383E56",
+      date: "May 2023 - November 2023",
+      points: [
+        "Amassed over 50,000+ impressions on IG page, built social media strategies to engage audience with the content and generate leads.",
+        "Successfully ran Ad-campaigns based on market research for a networking summmit leading to 2000+ registrations and 1000+ attendes attending the in person event. ",
+        "Created visually appealing social media graphics and engaged with the followers and community members by responding to comments and messages.",
+        "Conducted market research and analysed social media analytics to inform campaign planning.",
       ],
     },
     {
@@ -154,37 +167,24 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
   ];
   
   const testimonials = [
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      name: "Urvish Patel",
+      designation: "CTO",
+      company: "Orbit 5",
+      image: "urvish.png/assets/testimonial",
     },
     {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      name: "David Mendoza",
+      designation: "CEO",
+      company: "Orbit 5",
+      image: "https://ibb.co/Z8HCgXr",
     },
     {
       testimonial:

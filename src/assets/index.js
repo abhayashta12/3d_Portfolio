@@ -22,8 +22,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
+import orbit5 from "./company/orbit5.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import netflix from "./netflix.png";
@@ -53,8 +53,8 @@ export {
   typescript,
   threejs,
   meta,
+  orbit5,
   shopify,
-  starbucks,
   tesla,
   netflix,
   jobit,
