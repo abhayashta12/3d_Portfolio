@@ -17,8 +17,7 @@ import {
     docker,
     meta,
     orbit5,
-    tesla,
-    shopify,
+    bluejays,
     netflix,
     jobit,
     tripguide,
@@ -122,10 +121,10 @@ import {
       iconBg: "#E6DEDD",
       date: "December 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Maintained a flawless record of safety and security at 50+ major events with 50,000+ attendees.",
+        "Proactively identified and resolved security threats, preventing event disruptions, and ensuring incident-free experiences.",
+        "Received commendation for outstanding professionalism and customer service, leading to increased event attendance.",
+        "Successfully apprehended trespassers, guaranteeing the ejection of unauthorized individuals from sold-out concerts without incident.",
       ],
     },
     {
@@ -142,11 +141,11 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Security Officer",
+      company_name: "Blue Jays",
+      icon: bluejays,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "May 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -154,25 +153,13 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+   
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Abhay proved me wrong.",
       name: "Urvish Patel",
       designation: "CTO",
       company: "Orbit 5",
@@ -180,7 +167,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Abhay does.",
       name: "David Mendoza",
       designation: "CEO",
       company: "Orbit 5",

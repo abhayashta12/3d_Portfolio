@@ -23,8 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import orbit5 from "./company/orbit5.png";
-import shopify from "./company/shopify.png";
-import tesla from "./company/tesla.png";
+import bluejays from "./company/bluejays.png";
 
 import netflix from "./netflix.png";
 import jobit from "./jobit.png";
@@ -54,8 +53,7 @@ export {
   threejs,
   meta,
   orbit5,
-  shopify,
-  tesla,
+  bluejays,
   netflix,
   jobit,
   tripguide,
