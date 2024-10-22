@@ -17,7 +17,6 @@ import {
   docker,
   meta,
   orbit5,
-  bluejays,
   netflix,
   jobit,
   tripguide,
@@ -117,7 +116,7 @@ const experiences = [
   {
     title: "IT Analyst",
     company_name: "Canada's Wonderland",
-    icon: bluejays,
+    icon: rogers,
     iconBg: "#E6DEDD",
     date: "May 2024 - Present",
     points: [

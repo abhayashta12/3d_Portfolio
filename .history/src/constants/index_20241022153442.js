@@ -17,7 +17,7 @@ import {
   docker,
   meta,
   orbit5,
-  bluejays,
+  canada,
   netflix,
   jobit,
   tripguide,
@@ -117,7 +117,7 @@ const experiences = [
   {
     title: "IT Analyst",
     company_name: "Canada's Wonderland",
-    icon: bluejays,
+    icon: canada,
     iconBg: "#E6DEDD",
     date: "May 2024 - Present",
     points: [
@@ -165,7 +165,14 @@ const testimonials = [
     image:
       ""
   },
-
+  // {
+  //   testimonial:
+  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //   name: "Lisa Wang",
+  //   designation: "CTO",
+  //   company: "456 Enterprises",
+  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+  // },
 ];
 
 const projects = [
