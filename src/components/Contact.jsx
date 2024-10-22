@@ -6,6 +6,40 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import emailjs from 'emailjs-com'; // Import emailjs-com
 
+// Modal Component for displaying success message
+const SuccessModal = ({ show, onClose }) => {
+  const modalVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'easeInOut' } },
+    exit: { opacity: 0, scale: 0.9, transition: { duration: 0.3, ease: 'easeInOut' } },
+  };
+
+  return (
+    show && (
+      <motion.div
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={modalVariants}
+      >
+        <motion.div className="bg-[#111827] p-8 rounded-lg shadow-lg w-full max-w-md text-center">
+          <h2 className="text-3xl font-bold mb-4 text-white">Thank You!</h2>
+          <p className="text-gray-300 mb-4">
+            Thank you for sending me a message! I'll get back to you shortly.
+          </p>
+          <button
+            onClick={onClose}
+            className="mt-6 px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition duration-300"
+          >
+            Close
+          </button>
+        </motion.div>
+      </motion.div>
+    )
+  );
+};
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -14,6 +48,7 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false); // Modal state
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -44,7 +79,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert('Message sent successfully!');
+          setShowModal(true); // Show the modal on success
           setForm({
             name: '',
             email: '',
@@ -123,6 +158,9 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {/* Success Modal */}
+      <SuccessModal show={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };

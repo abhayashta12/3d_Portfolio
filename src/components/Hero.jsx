@@ -1,12 +1,33 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
+  // Define the roles you want to cycle through
+  const roles = [
+    "Full-Stack Developer",
+    "Social Media Manager",
+    "UI/UX Designer",
+    "Backend Developer",
+    "Mobile App Developer"
+  ];
+
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+
+  // useEffect to cycle through the roles every 3 seconds
+  useEffect(() => {
+    const roleChangeInterval = setInterval(() => {
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length); // Cycle through roles
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(roleChangeInterval); // Cleanup interval on unmount
+  }, [roles.length]);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -18,8 +39,12 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Abhay</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Full-Stack Developer, helping organizations <br className='sm:block hidden' />
-            to optimize backend with scalable backend API's.
+            I am a{' '}
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse'>
+              {roles[currentRoleIndex]}
+            </span>
+            <br className='sm:block hidden' />
+            helping organizations to optimize backend with scalable backend API's.
           </p>
         </div>
       </div>
@@ -36,7 +61,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
