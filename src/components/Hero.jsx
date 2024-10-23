@@ -15,11 +15,11 @@ const Hero = () => {
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
-  // useEffect to cycle through the roles every 3 seconds
+  // useEffect to cycle through the roles every 2 seconds
   useEffect(() => {
     const roleChangeInterval = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length); // Cycle through roles
-    }, 3000); // Change every 3 seconds
+    }, 2000); // Change every 2 seconds
 
     return () => clearInterval(roleChangeInterval); // Cleanup interval on unmount
   }, [roles.length]);

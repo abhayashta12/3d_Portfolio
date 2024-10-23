@@ -17,7 +17,7 @@ import {
   docker,
   meta,
   orbit5,
-  bluejays,
+  wonderland,
   netflix,
   jobit,
   tripguide,
@@ -117,7 +117,7 @@ const experiences = [
   {
     title: "IT Analyst",
     company_name: "Canada's Wonderland",
-    icon: bluejays,
+    icon:wonderland,
     iconBg: "#E6DEDD",
     date: "May 2024 - Present",
     points: [
@@ -132,7 +132,7 @@ const experiences = [
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "December 2023 - Present",
+    date: "December 2023 - April 2024",
     points: [
       "Maintained a flawless record of safety and security at 50+ major events with 50,000+ attendees.",
       "Proactively identified and resolved security threats, preventing event disruptions, and ensuring incident-free experiences.",
@@ -162,10 +162,16 @@ const testimonials = [
     name: "Urvish Patel",
     designation: "CTO",
     company: "Orbit 5",
-    image:
-      ""
+    image: "src/assets/testimonial/urvish.png"
   },
-
+  {
+    testimonial:
+      "Working with Abhay is always great. His focus towards his work is really appreciable.",
+    name: "David Mendoza",
+    designation: "CEO",
+    company: "Orbit 5",
+    image: "src/assets/testimonial/david.png"
+  }
 ];
 
 const projects = [
