@@ -172,7 +172,7 @@ const testimonials = [
     name: "David Mendoza",
     designation: "CEO",
     company: "Orbit 5",
-    image: davidImage
+    image: "src/assets/testimonial/david.png"
   }
 ];
 

@@ -24,7 +24,8 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import orbit5 from "./company/orbit5.png";
 import wonderland from "./company/wonderland.png";
-
+import urvishImage from "../assets/testimonial/urvish.png";
+import davidImage from "../assets/testimonial/david.png";
 import netflix from "./netflix.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -54,6 +55,8 @@ export {
   meta,
   orbit5,
   wonderland,
+  urvishImage,
+  davidImage,
   netflix,
   jobit,
   tripguide,

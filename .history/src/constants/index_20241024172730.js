@@ -164,7 +164,7 @@ const testimonials = [
     name: "Urvish Patel",
     designation: "CTO",
     company: "Orbit 5",
-    image: urvishImage
+    image: "urvishImage"
   },
   {
     testimonial:

@@ -18,8 +18,6 @@ import {
   meta,
   orbit5,
   wonderland,
-  urvishImage,
-  davidImage,
   netflix,
   jobit,
   tripguide,
@@ -164,7 +162,7 @@ const testimonials = [
     name: "Urvish Patel",
     designation: "CTO",
     company: "Orbit 5",
-    image: urvishImage
+    image: "src/assets/testimonial/urvish.png"
   },
   {
     testimonial:
@@ -172,7 +170,7 @@ const testimonials = [
     name: "David Mendoza",
     designation: "CEO",
     company: "Orbit 5",
-    image: davidImage
+    image: "src/assets/testimonial/david.png"
   }
 ];
 
